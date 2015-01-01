@@ -36,6 +36,6 @@ and then run it:
 
 ./completedbtos3.py
 
-Or add this line to run the script at midnight every day:
+Or add this line to run the script at midnight every day: 
 
 0 0 * * * /usr/bin/python /path/to/script/completedbtos3.py
