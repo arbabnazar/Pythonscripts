@@ -1,5 +1,3 @@
-Pythonscripts
-=============
 
 This Python script takes the mysql db backup and then upload it to AMAZON S3 Bucket using boto module. The script will also automatically delete the backup that are older than the days (mentioned in the script).
 
