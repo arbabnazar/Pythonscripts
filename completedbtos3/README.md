@@ -4,7 +4,7 @@ This Python script takes the mysql db backup and then upload it to AMAZON S3 Buc
 Requirements
 ------------
 
-This script requires boto. To install boto simply -
+This script requires boto. Install boto using pip:
 
 ```
 sudo pip install boto
