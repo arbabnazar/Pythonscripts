@@ -8,17 +8,24 @@ sudo pip install boto
 ### Mentioned your AWS Credentials here ###
 
 AWS_ACCESS_KEY_ID = 'You-AWS-ACCESS-KEY-ID'
+
 AWS_SECRET_ACCESS_KEY = 'You-AWS-SECRET-ACCESS-KEY'
+
 S3_BUCKET = 'Your-S3-Bucket'
 
 
 ### Mentioned the MySQL database details to which backup to be done.
 
-DB_HOST = 'DB-HOST-ADDRESS'
+DB_HOST = 'DB-HOST-ADDRESS' # Can be RDS/localhost
+
 DB_USER = 'USERNAME'
+
 DB_USER_PASSWD = 'PASSWORD'
-BACKUP_PATH = '/tmp/dbbackup' 
-DeleteOlderThan = 10
+
+BACKUP_PATH = '/tmp/dbbackup' # location on local host to save dump before uploading to S3
+
+DeleteOlderThan = 10 # Delete the dumps older then mentioned days
+
 
 ### How to use this script
 
