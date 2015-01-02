@@ -36,7 +36,7 @@ BACKUP_PATH = '/tmp/dbbackup' # location on local host to save dump before uploa
 DeleteOlderThan = 10 # Delete the dumps older then mentioned days
 ```
 
-######  How to use this script
+######  To use this script
 
 You can use it manually or using as cronjob.
 ```
