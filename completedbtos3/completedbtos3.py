@@ -22,7 +22,7 @@ bucket_name = aws_conn.get_bucket(S3_BUCKET)
 DB_HOST = 'DB-HOST-ADDRESS' # Can be RDS/localhost
 DB_USER = 'USERNAME'
 DB_USER_PASSWD = 'PASSWORD'
-BACKUP_PATH = '/tmp/dbbackup' # location on local host to save dump before uploading to S3
+BACKUP_PATH = '/tmp/dbbackup' # location on local host to save dump before upload it to S3
 DeleteOlderThan = 10 # Delete the dumps older then mentioned days
 
 ### Convert the Time into Seconds 
