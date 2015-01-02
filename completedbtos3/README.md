@@ -40,19 +40,19 @@ DeleteOlderThan = 10 # Delete the dumps older then mentioned days
 
 You can use it manually or using as cronjob.
 ```
-python completedbtos3.py
+python mysqldumptos3.py
 ```
 or
 
 Make it executable first:
 ```
-chmod +x completedbtos3.py 
+chmod +x mysqldumptos3.py 
 ```
 and then run it:
 ```
-./completedbtos3.py
+./mysqldumptos3.py
 ```
 Or add this line to run the script at midnight every day: 
 ```
-0 0 * * * /usr/bin/python /path/to/script/completedbtos3.py
+0 0 * * * /usr/bin/python /path/to/script/mysqldumptos3.py
 ```
