@@ -8,7 +8,6 @@ import shutil
 from boto.s3.connection import S3Connection
 from boto.s3.key import Key
 
-
 AWS_ACCESS_KEY_ID = 'You-AWS-ACCESS-KEY-ID'
 AWS_SECRET_ACCESS_KEY = 'You-AWS-SECRET-ACCESS-KEY'
 S3_BUCKET = 'Your-S3-Bucket'
@@ -17,7 +16,6 @@ S3_BUCKET = 'Your-S3-Bucket'
 
 aws_conn = S3Connection(AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY)
 bucket_name = aws_conn.get_bucket(S3_BUCKET)
-
 
 ### MySQL database details to which backup to be done.
 
@@ -34,7 +32,6 @@ DeleteOlderThan = int(DeleteOlderThan) * 86400
 ### Getting current datetime like "Sunday-16.11.2014" to create separate directory for backup.
 
 DATETIME = time.strftime('%A-%d.%m.%Y')
-
 
 ### Checking that the the backup directory already exists, if not then it will create it.
 
@@ -73,7 +70,6 @@ for root, dirs, files in os.walk(BACKUP_PATH):
         k.set_contents_from_filename(local_file_path)
         ### Delete the Compressed Files from local backup directory
         os.unlink(local_file_path)
-
 
 ### Delete the files from S3 Bucket, that are older than specified days
 for key in bucket_name.list():
