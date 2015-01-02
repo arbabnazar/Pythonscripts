@@ -14,7 +14,7 @@ Configuration
 
 The script requires the following configuration parameters
 
-####### AWS Details #######
+###### AWS Details
 ```
 AWS_ACCESS_KEY_ID = 'You-AWS-ACCESS-KEY-ID'
 
@@ -23,7 +23,7 @@ AWS_SECRET_ACCESS_KEY = 'You-AWS-SECRET-ACCESS-KEY'
 S3_BUCKET = 'Your-S3-Bucket'
 ```
 
-####### MySQL Details #######
+###### MySQL Details 
 ```
 DB_HOST = 'DB-HOST-ADDRESS' # Can be RDS/localhost
 
@@ -36,7 +36,7 @@ BACKUP_PATH = '/tmp/dbbackup' # location on local host to save dump before uploa
 DeleteOlderThan = 10 # Delete the dumps older then mentioned days
 ```
 
-#######  How to use this script ####### 
+######  How to use this script
 
 You can use it manually or using as cronjob.
 ```
