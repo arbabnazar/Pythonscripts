@@ -1,5 +1,5 @@
 
-This Python script simply takes the MySQL dumps and then upload it to AMAZON S3 Bucket using boto module. The script will also automatically delete the backup that are older than the days (mentioned in the script).
+This Python script simply takes the compressed MySQL dumps and then upload it to AMAZON S3 Bucket using boto module. The script will also automatically delete the backup that are older than the days (mentioned in the script).
 
 Requirements
 ------------
